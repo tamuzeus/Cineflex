@@ -1,0 +1,70 @@
+@media only screen and (max-width: 500px) {
+
+    .control {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*section one*/
+
+    .sectionseat {
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 80vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seat {
+        background: #C3CFD9;
+        border: 1px solid #808F9D;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seatnumber {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.04em;
+    }
+
+    .selected {
+        background: #8DD7CF;
+        border: 1px solid #1AAE9E;
+    }
+
+    .close {
+        background: #FBE192;
+        border: 1px solid #F7C52B;
+    }
+
+    /*section two*/
+
+    .seattypes{
+        display: flex;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .type{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seattext{
+        margin-top: 5px;
+    }
+
+}

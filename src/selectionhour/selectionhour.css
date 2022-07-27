@@ -1,0 +1,34 @@
+@media only screen and (max-width: 500px) {
+
+    .sectionsinfos {
+        margin-left: 20px;
+    }
+
+    .infosbody {
+        margin-bottom: 20px;
+    }
+
+    .infoday {
+        margin-bottom: 30px;
+    }
+
+    .buttonsbody {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .buttonhour {
+        width: 83px;
+        height: 43px;
+        background: #E8833A;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttontext {
+        color: white;
+    }
+}

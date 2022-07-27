@@ -1,0 +1,42 @@
+@media only screen and (max-width: 500px) {
+
+    .section {
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selection {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.04em;
+        color: #293845;
+    }
+
+    .filmslist {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filmearea {
+        height: 209px;
+        max-width: 145px;
+        padding: 10px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .poster {
+        height: 100%;
+        width: 100%;
+    }
+}
