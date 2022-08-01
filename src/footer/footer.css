@@ -1,0 +1,53 @@
+@media only screen and (max-width: 500px) {
+
+
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 117px;
+        left: 0px;
+        bottom: 0px;
+        color: #293845;
+        background: #DFE6ED;
+        border: 1px solid #9EADBA;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .footermpvieinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .divfooterarea {
+        width: 64px;
+        height: 89px;
+        left: 10px;
+        bottom: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        margin-right: 14px;
+        margin-left: 15px;
+    }
+
+    .footerimg {
+        width: 80%;
+        height: 80%;
+    }
+
+}

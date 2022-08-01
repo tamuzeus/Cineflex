@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom'
 import "./selectionmovie.css"
 import axios from "axios"
 import { useEffect, useState } from 'react'
 
-function Images({ src }) {
+function Images({ src,id }) {
 
     return (
-        <div className="filmearea">
+        <Link className="filmearea" to={`/hour/${id}`} >
             <img src={src} className="poster"></img>
-        </div>
+        </Link>
     )
 }
 
@@ -16,7 +17,7 @@ export default function Selectionmovie() {
     const [img, setImg] = useState([])
 
     useEffect(() => {
-        const promise = axios.get('https://mock-api.driven.com.br/api/v5/cineflex/movies')
+        const promise = axios.get('https://mock-api.driven.com.br/api/v7/cineflex/movies')
         promise.catch(() => console.log('error'))
         promise.then((value) => {
             setImg(value.data)
@@ -29,10 +30,10 @@ export default function Selectionmovie() {
                 <h1 className="selection">Selecione o filme</h1>
             </section>
 
-            <section className="filmslist">
-
-                {img.map((value, index) => (<Images src={value.posterURL} key={value.id} />))}
-
+            <section>
+                <div className="filmslist" >
+                    {img.map((value) => (<Images src={value.posterURL} key={value.id} id={value.id}/>))}
+                </div>
             </section>
         </article>
     )
